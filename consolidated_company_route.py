@@ -1,3 +1,14 @@
+from flask import Flask # Import the flask package with capital letter
+from flask import request # Imported for query parameters to work
+app = Flask(__name__)
+
+""" STATIC ROUTES """
+
+@app.route('/') # http://127.0.0.1:5000/
+# A method "Index() below"
+def index():
+    return 'Hello Flask!' # Renders on basic route
+
 @app.route('/<company>/<name>')
 def personnel_info(company, name):
     company_data = {
