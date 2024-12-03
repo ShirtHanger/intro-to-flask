@@ -1,0 +1,33 @@
+Intro to Flask - Setup
+
+Make a new directory called intro-to-flask, then enter this directory:
+
+---
+mkdir intro-to-flask
+cd intro-to-flask
+---
+
+Initialize a new virtual environment inside your project directory and install Flask and Python’s PostgreSQL library:
+
+---
+pipenv install flask 
+---
+
+This command will create a new Pipfile and Pipfile.lock in your project directory, specifying Flask as a dependency.
+
+Activate the virtual environment:
+
+---
+pipenv shell
+---
+
+AT THE END OF THE LESSON, to deactivate the virtual environment when you’re done, simply type:
+
+---
+exit
+---
+
+Open the contents of the directory in VSCode:
+---
+code .
+---
